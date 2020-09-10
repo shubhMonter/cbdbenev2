@@ -33,7 +33,7 @@ const Category = ({ productList,categoryData, combos, ...props }) => {
 			...el,
 		};
 	});
-	
+	console.log(categoryData);
 	const currentCategory = categoryData[props.category] || categoryData;
 	const bannerTitle = currentCategory.bannerTitle;
 	const title = currentCategory.title;
@@ -61,7 +61,7 @@ const Category = ({ productList,categoryData, combos, ...props }) => {
 							parentClass="c-category-page"
 							versions={["lft-br", "large"]}
 						>
-							{parse(bannerTitle)}
+							{/* {parse(bannerTitle)} */}
 						</Heading>
 					</div>
 					<br />
@@ -79,9 +79,9 @@ const Category = ({ productList,categoryData, combos, ...props }) => {
 									{/* Discover
                                     <br />
                                     {`our ${props.category} line`} */}
-									{parse(title)}
+									{/* {parse(title)} */}
 								</Heading>
-								{parse(content)}
+								{/* {parse(content)} */}
 								<hr />
 							</div>
 						</div>
@@ -105,7 +105,7 @@ const Category = ({ productList,categoryData, combos, ...props }) => {
 							<div className="col-md-6 col-lg-4 offset-lg-1 mb-md-0 mb-3">
 								<Heading parentClass="c-category-page" versions={["large"]}>
 									{/* TRY THE BUNDLES */}
-									{parse(bundleTitle)}
+									{/* {parse(bundleTitle)} */}
 								</Heading>
 							</div>
 							<div className="col-md-6">
@@ -115,7 +115,7 @@ const Category = ({ productList,categoryData, combos, ...props }) => {
 									versions={["lft-br"]}
 								>
 									{/* Give our bundles a try with our 60-day, money-back guarantee. The perfect gift. A great way to enjoy premium CBD at an incredible price. All bundles are 20% off. */}
-									{parse(bundleContent)}
+									{/* {parse(bundleContent)} */}
 								</Heading>
 							</div>
 							<div className="col-12">
